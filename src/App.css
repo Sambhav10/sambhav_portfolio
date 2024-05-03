@@ -5,7 +5,6 @@
 
 
 #root {
-
   margin: 0 auto;
   text-align: center;
 }
@@ -93,7 +92,9 @@ span {
 #aside nav li {
   margin-bottom: 20px;
   display: block;
+  cursor: pointer;
 }
+
 
 #aside nav li  {
   font-size: 16px;
@@ -104,18 +105,19 @@ span {
   padding: 5px 15px;
 }
 
+#aside nav  li:hover {
+  color: #ff5349; 
+}
+
 /* Main */
 main {
   padding-left: 270px;
-  
- 
- 
  
 }
 /* Home  */
 
 #home-section {
-  min-height: 55vh;
+  min-height: 65vh;
   display: block;
   position: flex;
   left: 270px;
@@ -126,7 +128,7 @@ main {
 }
 
 #home-info {
-  margin: 5% 13% 5% 10% ;
+  margin: 20% 13% 15% 15% ;
  ;
 }
 
@@ -137,12 +139,11 @@ main {
   float: right;
   border-radius: 10px;
 }
-#contactbtn {
-  padding: 2%;
+.button{
+  padding: 1%;
   margin-right: 3%;
   margin-top: 5%;
-  border-radius: 20px;
-  color: #fff;
+  border-radius: 15px;
   background-color: #ff5349;
   font-size: 16px;
   font-weight: bold;
@@ -150,45 +151,262 @@ main {
   margin-bottom: 2%;
 }
 
-#contactbtn:hover {
+.button a {
+  color: white;
+}
+
+.button:hover {
   background-color: #302e4d;
 }
-#contactbtn:hover a {
+ .button:hover a {
   color: #fdf9ff;
 }
 
 
+
 /* Wrk experience  */
 
+#work-section {
+  padding-left: 290px;
+  margin-bottom: 10%;
+}
 
 #work-section p{
   font-size: 18px;
+  
 }
-#work-section h4{
+#work-section h2{
   font-size: 26px;
-
+  color:#302e4d ;
 }
-.experience1{
-  padding-left:2% ;
-  float:left;
-  width: 70%;
 
+#work-section h4{
+  font-size: 20px;
+  color:#302e4d ;
+}
+
+.experience{
+  padding-top: 5%;
+  padding-left:3% ;
+  float:left;
+  width: 65%;
+  text-align: left;
+  
+}
+.recommendation-btn {
+  margin-right: 290px ;
+  
 }
 
 .right_side{
   float: right;
-  width: 27%;
+  width: 35%;
 }
+
 #emco{
   width: 300px;
-
+  height: 250px;
 }
+
+
+/* About Section */
+
+#about-section {
+  padding-left: 3%;
+  align-items: center;
+  
+  margin-bottom: 10%;
+}
+hr {
+  margin-top: 1%;
+  margin-bottom: 3%;
+  width: 75px;
+  height: 8px;
+  background-color: #ff5349;
+}
+
+
+#abouttext {
+  float:center ;
+  padding: 0 15% 10% 0;
+  text-align: justify;
+}
+
+
+#skills-section {
+  margin-bottom: 15%;
+  padding-left: 290px;
+}
+
+
+#left-skills {
+  margin-top: 5%;
+  float: left;
+}
+
+#right-skills {
+  margin-top: 8%;
+  padding-left: 50%;
+  
+}
+
+#myskills #left-skills li {
+  padding-bottom: 5%;
+}
+#myskills #right-skills li {
+  padding-bottom: 3.5%;
+}
+
+.bar {
+  width: 400px;
+  background: #ff5349;
+  display: block;
+  height: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar span {
+  height: 10px;
+  float: left;
+  background: #302e4d;
+}
+
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 80%;
+}
+
+.javascript {
+  width: 60%;
+}
+.java {
+  width: 95%;
+}
+.react {
+  width: 80%;
+}
+.sql {
+  width: 70%;
+}
+
+/* Portfolio Section */
+
+#portfolio-section{
+  padding-left: 290px;
+  align-items: center;
+}
+
+.projects {
+ 
+  
+  display: flex;
+  margin-bottom: 10%;
+}
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px); 
+  margin-right: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.project-card:last-child {
+  margin-right: 0; /* Remove right margin for the last card */
+}
+
+.project-card img {
+  max-width: 100%;
+  margin-bottom: 10px; /* Add margin below the image */
+}
+
+.project-card h2, .project-card p {
+  text-align: center; 
+  font-size: 22px;
+  padding: 2% 0;
+  color: #504e70;
+}
+
+.project-logo {
+  height: 100px;
+}
+
+
+/* Contact section */
+
+#contact-section {
+  padding-left: 290px;
+}
+.contact-title {
+  color: #ff5349;
+  padding-top: 5%;
+  text-align: center;
+  clear: both;
+}
+
+.contact-subtitle {
+  font-size: 35px;
+  padding-top: 3%;
+  text-align: center;
+  color: #504e70;
+}
+.contact-info-item {
+  max-width: 30%;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  padding-left: 10%;
+  padding-right: 8%;
+  float: left;
+}
+
+
+.contact-info-item p {
+  
+  color: #504e70;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#contact-section .contact-form {
+  text-align: center;
+  padding-top: 5%;
+  width: 100%;
+}
+
+.contact-form .form-item .form-control {
+  width: 50%;
+  line-height: 2em;
+  background-color: #fdf9ff;
+  border: 1px solid #e8dfec;
+  padding: 10px 25px;
+  font-size: 16px;
+  color: #504e70;
+  border-radius: 25px;
+}
+
+#contact-img {
+  height: 50px;
+}
+
+.form-group {
+  margin-bottom: 2%;
+}
+
 
 
 /* Footer  */
 
 .main-footer {
- 
+  padding-left: 10%;
   margin-top: 8%;
   margin-left: 0;
   padding-top: 1%;
@@ -258,214 +476,6 @@ a {
   font-size: 14px;
 }
 
-/* About Section */
-
-#about-section {
-  padding-left: 2%;
-}
-hr {
-  margin-top: 1%;
-  margin-bottom: 3%;
-  width: 75px;
-  height: 8px;
-  background-color: #ff5349;
-}
-
-
-#abouttext {
-  float: right;
-  padding: 0 15% 3% 0;
-  text-align: justify;
-}
-
-#fanshawe-logo {
-  height: 100px;
-  float: left;
-  padding-right: 3%;
-}
-
-#highschool-logo {
-  height: 100px;
-  float: left;
-  padding-right: 3%;
-}
-
-#highschool p,
-h2 {
-  font-size: 18px;
-  font-weight: normal;
-  padding-left: 3%;
-}
-
-#highschool {
-  margin-bottom: 5%;
-}
-#college {
-  clear: both;
-  padding-bottom: 3%;
-}
-
-#college p,
-h2 {
-
-  font-size: 18px;
-  font-weight: normal;
-  padding-left: 3%;
-}
-
-
-
-#left-skills {
-  float: left;
-}
-
-#right-skills {
-  padding-left: 50%;
-}
-
-#myskills #left-skills li {
-  padding-bottom: 5%;
-}
-#myskills #right-skills li {
-  padding-bottom: 3.5%;
-}
-
-.bar {
-  width: 400px;
-  background: #ff5349;
-  display: block;
-  height: 10px;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.bar span {
-  height: 10px;
-  float: left;
-  background: #302e4d;
-}
-
-.html {
-  width: 90%;
-}
-
-.css {
-  width: 80%;
-}
-
-.javascript {
-  width: 60%;
-}
-.java {
-  width: 95%;
-}
-.react {
-  width: 80%;
-}
-.sql {
-  width: 70%;
-}
-
-/* Portfolio Section */
-
-
-.projects {
-  padding: 5% 0;
-  display: flex;
- 
-}
-.project1 {
-  width: 33%;
-  padding-right: 3%;
-}
-
-.project1 h2,
-.project2 h2,
-.project3 h2
- {
-  font-size: 22px;
-  padding: 2% 0;
-  color: #504e70;
-}
-.project2 {
-  padding-right: 3%;
-  width: 33%;
-  padding-bottom: 5%;
-}
-.project3 {
-  width: 33%;
-  padding-bottom: 5%;
-  padding-right: 3%;
-}
-
-#project-logo {
-  height: 100px;
-}
-
-#project1-logo {
-  height: 100px;
-}
-/* Contact section */
-
-#contact-section {
-  padding-left: 2%;
-}
-.contact-title {
-  color: #ff5349;
-  padding-top: 5%;
-  text-align: center;
-  clear: both;
-}
-
-.contact-subtitle {
-  font-size: 35px;
-  padding-top: 3%;
-  text-align: center;
-  color: #504e70;
-}
-.contact-info-item {
-  max-width: 30%;
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 4%;
-  padding-left: 10%;
-  padding-right: 8%;
-  float: left;
-}
-
-
-.contact-info-item p {
-  
-  color: #504e70;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-#contact-section .contact-form {
-
-  text-align: center;
-  padding-top: 5%;
-  width: 100%;
-}
-
-.contact-form .form-item .form-control {
-  width: 50%;
-  line-height: 2em;
-  background-color: #fdf9ff;
-  border: 1px solid #e8dfec;
-  padding: 10px 25px;
-  font-size: 16px;
-  color: #504e70;
-  border-radius: 25px;
-}
-
-#contact-img {
-  height: 50px;
-}
-
-.form-group {
-  margin-bottom: 2%;
-}
 
 
 @media screen and (max-width: 1200px) {
@@ -529,7 +539,7 @@ h2 {
     float: left;
     padding: 3%;
     width: 50%;
-    
+  
     
   }
   
